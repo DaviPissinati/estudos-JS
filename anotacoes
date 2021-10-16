@@ -1,0 +1,254 @@
+
+# anotacoes de estudos 
+
+
+typeof = ""
+'string'
+typeof = function(){}
+'function'
+typeof = []
+'object'
+typeof = {}
+'object'
+typeof = null
+'object'
+typeof = underfined
+'underfined'
+typeof = NaN
+'number'
+typeof = infinity
+'number'
+typeof = infinity
+'number'
+typeof = 15
+'number'
+
+
+
+# aula06
+
+# como e possivel guardar o valor digitado em um prompt() dentro de uma variavel?
+
+# Como fazer com que um número digitado em um prompt() possa ser usado em cálculos? 
+
+# Como transformar um texto todo para letras maiúsculas? 
+
+# Como mostrar um número formatado como valor monetário? 
+
+# concatenação = ("" + varialvel + "")
+
+Transformar steing em número 
+
+Number.parseint(n)
+Para números inteiros 
+Number.parsefloat(n)
+Para números reais
+Number(n) 
+Trabalha com os dois tipos
+Números pra steing 
+
+String(n)
+n.toString()
+Formatação de strings
+
+Var s = 'JavaScript' 
+'eu estou aprendendo' + s // concatenação 
+`eu estou aprendendo ${s}` usa template string 
+
+${n} - placehoad
+s.length // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'MAIUSCULAS'
+s.toLowerCase() // tudo para 'minusculas'
+
+Formatação de números 
+n1 recebe = 1545.5 
+
+n1.toFixed(2)
+'1545.50'
+Adiciona uma cada decima
+
+Transformar uma coisa em outra 
+
+n1.toFixed(2).replace('.' , ',')
+1545,50
+n1.toLocaleString('pt-BR', {'currency', currency: "BRL"})
+R$ 1,545.50
+
+Currency - valor monetário
+
+# aula 07
+
+# Operadora JS
+
+Aritméticos 
+Atribuição 
+Relacionais 
+Lógicos 
+Ternário
+
+# Aritméticos 
+
+5+ 2 = 7
+5- 2 = 3
+5* 2 = 10
+5/ 2 = 2,5
+5 % 2 = 1
+5 ** potência 2 = 25
+
+# Precedência 
+
+()
+**
+* / %
++ -
+
+
+# Atribuição simples 
+
+Var a = 5 + 3            8
+Var b = a % 5            3
+Var c = 5 * b ** 2       45
+Var d = 10 - a / 2       6
+Var e = 6 * 2 / d        2 
+Var f = b % e + 4 / e    3
+
+# Auto-atribuiçóes 
+
+
+Var n = 3                  
+
+n = n + 4   n+= 4      7
+n = n - 5              2
+n = n * 4              8
+n = n / 2              4
+n = n ** 2             16
+n = n % 5              1
+
+# Simplificado 
+
+n += 4
+
+# Incremento
+
+# Var x = 5 
+x = + 1         x ++
+x = x - 1       x --
+
+x++ serve para acrescenta algo 
+x-- serve para diminuir algo
+
+ 
+#  aula 08 
+
+Relacionais 
+
+5 > 2 = true
+7 < 4 = false
+8 >= 8 = true 
+9 <= 7 = false
+5 == 5 = true 
+4 != 4 = false
+
+Exemplos 
+
+Preço >= 200.50 // o preço e maior ou igual a 200.50 ?
+Idade = 18 // a idade e menor do que 18 ?
+Curso == 'JavaScript' // o curso e JavaScript?
+n1 != n2 // o primeiro número e diferente do segundo ? 
+
+Identidade 
+
+5 == 5 --> true
+
+5 == '5' --> true // mesmos sendo sendo de valores diferentes, eles tem o valor de grandeza 
+
+5 === '5' --> false // por que não tem a MSM identidade 
+
+5 === 5 --> true 
+
+!== --> desigual restrito 
+
+Lógicos 
+
+! --> negação 
+&& --> conjunção
+|| --> disjunção
+
+
+Negação 
+! --> Operador unário true e false 
+
+Conjunção 
+&& --> operador binário 
+
+Só serve se as duas forem verdadeiras, caso ao contrário e false 
+
+Exemplo 
+
+True   |    | true  --> true
+True   |    | false }
+False  | && | true    } false
+False  |    | false }
+
+Disjunção 
+|| --> operado binário
+
+
+Caso um for verdadeiro os o resultado e true
+
+Exemplo 
+
+True   |    | true  }
+True   |    | false  } true
+False  | || | true  }
+False  |    | false --> false
+
+Primeiro operados aritméticos depois operações lógicos
+
+
+# Ordem de execução 
+
+Primeiro o ! 
+
+Segundo o && 
+
+Terceiro o ||
+
+Exemplos 
+Idade >= 15 && idade <= 17 // a idade esta entre 15 e 17 ?
+
+estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP ? 
+
+
+Salário > 1500 && sexo !=      'M' // o salário é acima de 1500 e não é homem ?
+
+# Precedência 
+
+Dentro de uma expressão 
+Primeiros os valores aritméticos(com a ordem de precendecia )
+Segundo os valores relacionais ( não tem ordem, faz quem aparecer primeiro, leitura da esquerda pra direita )
+! 
+&& 
+
+||
+
+# Ternário 
+
+   ?    : 
+
+Ternário por que tem 3 partes 
+
+Teste ? True : false 
+
+
+
+
+Média >= 7 ? 'aprovado' : 'reprovado'
+
+
+
+aula09
+
+write - serve para escrever na tela 
+innertext - serve para pegar o texto do componet
+innerHTML serve para busca o textos eo componetes dele
