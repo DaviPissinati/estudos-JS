@@ -252,3 +252,11 @@ aula09
 write - serve para escrever na tela 
 innertext - serve para pegar o texto do componet
 innerHTML serve para busca o textos eo componetes dele
+
+
+exercios JS
+
+
+.createElement('') usado para criar um elemento no seu codigo html
+.setAttribute() usado para colocar um atributo na tag criada 
+.appendChild() adicionar um elemento
