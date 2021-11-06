@@ -12,4 +12,6 @@ function copiar(copiar) {
 
 function colar(colar){
     var colar = email.value
+    
+    email.innerHTML = `${colar}`
 }
